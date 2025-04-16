@@ -61,6 +61,12 @@ struct ListNode* init_list(int value){
  * };
  */
 
+///////////////////////////////////////////////////////////////
+/* The definition of the function is the solution of the problem*/
+/////////////////////////////////////////////////////////////
+
+
+
 struct ListNode* reverseList(struct ListNode* head) {
     if (head==0)
     return 0;
@@ -92,7 +98,9 @@ struct ListNode* reverseList(struct ListNode* head) {
 
     return current;
 }
-
+////////////////////////////////////////////////////////////////////////////
+/*This function definitions are for local testing, and some from v1       */
+////////////////////////////////////////////////////////////////////////////
 
 struct ListInfo* mapList(struct ListNode* head){
 
