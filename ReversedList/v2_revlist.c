@@ -76,29 +76,7 @@ struct ListNode* reverseList(struct ListNode* head) {
     prev = head;                            //assign head to prev
     current = head->next;                   //assign the head-next to current
     context = current->next;                //assign current->next to context
-/*
-    ///Swap
-    current->next=prev;
-    prev = current;
-    printf("current: %d, current->next: %d\n", current->val, current->next->val);
-    current = context;
-    context=current->next;
 
-    
-    current->next=prev;
-    prev = current;
-    printf("current: %d, current->next: %d\n", current->val, current->next->val);
-    current = context;
-    context=current->next;
-
-
-    current->next=prev;
-    prev = current;
-    printf("current: %d, current->next: %d context: %d\n", current->val, current->next->val, context);
-    //current = context;
-    //context=current->next;
-*/
-    
 
     while(context!=0){
         
@@ -110,7 +88,6 @@ struct ListNode* reverseList(struct ListNode* head) {
     }
     current->next=prev;
     head->next=0;
-    printf("%d", current->val);
 
 
     return current;
