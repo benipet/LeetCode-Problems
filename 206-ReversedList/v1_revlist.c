@@ -144,11 +144,6 @@ void add_node(struct ListNode* head, int value){
         }
         current=current->next;
     }
-    
-    
-    
-
-
 }
 
 
